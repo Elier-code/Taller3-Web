@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo foirmulario #3</title>
+</head>
+
+<body >
+    <h1 style="color: #f00;">Empoyee Registration Form</h1>
+    <form>
+        <label for=""></label> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+        <input type="radio" name="genero">Mr.
+        <input type="radio" name="genero">Mrs.
+        <input type="radio" name="genero">Ms. <br>
+        <label>First Name</label> &emsp; &emsp;&emsp;
+        <input type="text" placeholder="First Name" pattern="^(Mr|Ms|Mrs)\s{1,2}\w+$"><br>
+        <label>Last Name</label> &emsp; &emsp;&emsp;
+        <input type="text" placeholder="Last Name" pattern="^(Mr|Ms|Mrs)\s{1,3}\w+$"><br>
+        <label>Email</label> &emsp; &emsp;&emsp;&emsp;&emsp;
+        <input type="email" pattern="^.+@cecar.edu.co"><br>
+        <label>Address </label> &emsp; &emsp; &emsp;&emsp;
+        <input type="text" pattern="^.{1,100}$"><br>
+        <label>City</label> &emsp; &emsp; &emsp; &emsp; &emsp;
+        <input type="text"><br>
+        <label form="state">State</label>  &emsp; &emsp; &emsp; &emsp;&emsp;
+        <input list="states" name="state" id="state">
+        <datalist id="states">
+            <option value="Gujarat">
+            <option value="Sucre">
+            <option value="Tolima">
+            <option value="Meta">
+            <option value="Antioquia">
+        </datalist><br>
+        <label>Zip</label>  &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;
+        <input type="text"><br>
+        <label>Upload Photo</label>  &emsp; &emsp;
+        <input type="file"><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
